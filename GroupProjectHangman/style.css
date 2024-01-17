@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: linear-gradient(to right, rgb(251, 190, 190), rgb(153, 153, 250));
+}
+
+#letterlist {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+}
+
+#letterlist li {
+  margin: 1rem;
+}
+
+.inputletter {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  width: 74px;
+  height: 36px;
+  margin-right: 20px;
+}
+.labeltext {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.buttonguess {
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px;
+  transition: opacity 0.15s;
+  font-weight: bold;
+  font-size: 15px;
+  width: 74px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.buttonguess:hover {
+  opacity: 0.9;
+  box-shadow: 5px 5px 14px 1px;
+}
+.buttonguess:active {
+  opacity: 0.4;
+}
+
+.sameletter {
+  background-color: rgb(235, 224, 224);
+  position: absolute;
+  top: 70%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+
+svg #head {
+  display: none;
+}
+
+svg #body {
+  display: none;
+}
+
+svg #arms {
+  display: none;
+}
+
+svg #legs {
+  display: none;
+}
